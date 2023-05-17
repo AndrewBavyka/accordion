@@ -16,60 +16,58 @@ body {
 }
 
 .wrapper {
+    width: 50%;
     padding: 30px;
     border-radius: 12px;
     text-align: center;
     background: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper header {
-    font-size: 18px;
-    font-weight: 400;
-    color: #333;
-}
-
-.wrapper p {
-    color: #333;
-}
-
-.wrapper .input-field {
     display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 25px 0;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.input-field input,
-.input-field button {
-    height: 50px;
-    width: calc(100% / 2 - 20px);
-    outline: none;
-    padding: 0 20px;
-    border-radius: 8px;
+ul {
+    list-style: none;
 }
 
-.input-field input {
-    text-align: center;
-    font-size: 18px;
-    border: 1px solid #aaa;
-    color: #707070;
+a {
+    text-decoration: none;
 }
 
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    display: none;
+.footer-menu__item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu__link {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.footer-submenu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.footer-menu__title {
+    transition: 0.4s;
 }
 
 
-.input-field button {
-    cursor: pointer;
-    border: none;
-    background: #4a98f7;
-    color: #fff;
-    transition: .3s;
+.footer-submenu__link {
+    color: rebeccapurple;
 }
 
-.input-field button:active {
-    transform: scale(0.98);
+.active {
+    padding-top: 15px;
 }
